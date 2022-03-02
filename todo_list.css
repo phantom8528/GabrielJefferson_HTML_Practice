@@ -1,0 +1,10 @@
+body{
+    background-color: blue;
+}
+
+/*This will only apply to the lists that are created*/
+li {
+    font-size: 18px;
+    background-color: orange;
+    margin: 30px 0; /*This creates vertical spacing b/w list items*/
+}
