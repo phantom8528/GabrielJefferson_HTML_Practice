@@ -1,0 +1,33 @@
+/* 03/02/22 */
+
+/* CSS Test 3 - This should apply to all the h1 Headers*/
+
+h1{
+    color:blueviolet;
+    font-size: 40px;
+    font-weight:bolder;
+    background-color: antiquewhite;
+}
+
+/*CSS Test 4 - This only apply to elements 
+belonging to the class "test4" */
+.test4{
+    background-color:aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px
+}
+/*CSS Test 5 - These will only test the id selectors*/
+.test5{
+    background-color: red;
+}
+#article_color1{
+    color:black
+}
+
+#article_color2{
+    color:wheat
+}
+
+#article_color3{
+    color:rgb(38, 45, 151)
+}
