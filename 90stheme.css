@@ -1,0 +1,146 @@
+/*90's Themed Website*/
+body{
+    background-color: #39FF14;
+}
+/*1st - Let's work out the dimensions of each section*/
+.container{
+    display: grid;
+    grid-template-columns:0.7fr 2.5fr 0.1fr ;
+    grid-template-rows: 2.0fr 10fr 0.3fr;
+    gap: 10px 10px;
+    grid-template-areas:
+    "header header header"
+    "menu content ."
+    ". footer ." ;
+}
+@font-face { /*<-- Font for Home Page Title*/
+    font-family: forh1fonts;
+    src: url(Lazer84.ttf);
+}
+@font-face {  /*<-- Font for Menu Options*/
+    font-family: forh2fonts;
+    src: url(AtariClassic-Regular.ttf);
+}
+@font-face {
+    font-family: supermariofont; /*Option 1 Font*/
+    src: url(New\ Super\ Mario\ Font\ U.ttf);
+}
+@font-face { /*Option 2 Font*/
+    font-family: sonicfont;
+    src: url(NiseSegaSonic.TTF);
+}
+@font-face { /*Option 3 Font */
+    font-family: residentevilfont;
+    src: url(Resident_Evil_Large.ttf);
+}
+@font-face { /*Option 4 Font*/
+    font-family: marvelfont;
+    src: url(MarvelRegular-Dj83.ttf);
+}
+@font-face { /*Also Option 4 Font*/
+    font-family: capcomfont;
+    src: url(Korinna\ Bold.ttf);
+}
+.header{ 
+    grid-area: header;
+    border:2px solid black;
+    background-color: black;
+    font-family: forh1fonts;
+    font-size: 50px;
+}
+#prime{
+    color: #FF10F0;
+    text-align: center;
+    /* font-family:  ; */
+}
+
+.content{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px;
+    grid-template-areas: 
+    "option1 option2"
+    "option3 option4"
+    "option5 .";
+    /* border:2px solid black; */
+    }
+/*Option for Super Mario 64*/
+ .option1{grid-area: option1;
+        border:2px solid black;
+        background-color: black;
+        background-image: url(https://c.tenor.com/NpWm6ouFz-UAAAAC/super-mario-64.gif);
+        background-repeat: repeat;
+        opacity: 1.0} 
+        
+        /*Title for Super Mario 64*/
+        #super_mario_opt_title{
+            color: rgb(175, 14, 14);
+            text-align: center;
+            font-family: supermariofont;
+            /* font-size: larger; */
+        }
+        
+
+.option2{grid-area: option2;
+        border:2px solid black;
+        background-image: url(https://imgix.pedestrian.tv/content/uploads/2017/10/giphy-3.gif?auto=format&fit=fill&q=65&w=720&nrs=30&fm=gif);
+        background-repeat: repeat;
+        opacity: 1.0}
+
+        /*Title for Sonic The Hedgehog*/
+        #sonic_the_hedgehog_opt_title{
+            color: blue;
+            text-align: center;
+            font-family: sonicfont;
+        }
+
+ .option3{grid-area: option3;
+        border:2px solid black;
+        background-image: url(https://media4.giphy.com/media/3caEcViLVTCik/giphy.gif?cid=790b7611d976058265934e69a1db14b382b093add7018cf8&rid=giphy.gif&ct=g);
+        background-repeat: repeat;
+        opacity: 1.0}
+
+        /*Title for Resident Evil*/
+        #resident_evil_1996{
+            color: red;
+            text-align: center;
+            font-family: residentevilfont;
+        }
+
+ .option4{grid-area: option4;
+        border:2px solid black;
+        background-image: url(https://pa1.narvii.com/7212/ed158f926f6e0900e3e2513bc2b3365cb8c93fafr1-381-222_hq.gif);
+        background-repeat: repeat;
+        opacity: 1.0}
+
+        /*Title for Marvel vs Capcom*/
+        #marvel_vs_capcom_opt_title1{
+            color: red;
+            text-align: center;
+            font-family: marvelfont;
+        }
+        /*Title for Capcom*/
+        #marvel_vs_capcom_opt_title2{
+            color: goldenrod;
+            text-align: center;
+            font-family: capcomfont;
+        }
+ .option5{grid-area: option5; }
+
+
+
+.menu{grid-area: menu; }
+
+    /*Fonts Exclusively for the Menu on the Home Page*/
+#menu_fonts{
+    font-family: forh2fonts; 
+    font-size: 30px;
+    color: black; 
+    font-size: larger;
+    font-weight:800;  
+}
+.footer{
+    grid-area: footer;
+    border:2px solid black;}
