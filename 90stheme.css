@@ -41,6 +41,7 @@ body{
     font-family: capcomfont;
     src: url(Korinna\ Bold.ttf);
 }
+
 .header{ 
     grid-area: header;
     border:2px solid black;
@@ -131,16 +132,60 @@ body{
 
 
 
-.menu{grid-area: menu; }
+.menu{grid-area: menu;
+            font-family: forh2fonts; }
+/*The Side Navigation Menu is Located inside the Menu Section*/
 
-    /*Fonts Exclusively for the Menu on the Home Page*/
-#menu_fonts{
+.sidenav{
+    height: 100%;
+    width: 2.0fr;
+    /* position: fixed; */
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    font-family: forh2fonts;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a, .menu_button{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color:#FF10F0;
+    display: block;
+    border: none;
+    background: none;
+    /* background-color: black; */
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.menu_button{
+    font-family: forh2fonts;
+}
+
+/*When the mouse hovers over an option*/
+.sidenav a:hover, .menu_button:hover{
+    color: orange; /*<-- The letters turn orange*/
+}
+
+
+
+/*Fonts Exclusively for the Menu on the Home Page*/
+/* #menu_fonts{
     font-family: forh2fonts; 
     font-size: 30px;
     color: black; 
     font-size: larger;
     font-weight:800;  
-}
+} */
 .footer{
     grid-area: footer;
-    border:2px solid black;}
+    /* border:2px solid black; */
+    text-align: center;
+    font-family: forh1fonts;
+    color:#FF10F0;
+    background-color: black;}
