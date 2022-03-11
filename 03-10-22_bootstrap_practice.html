@@ -27,54 +27,57 @@
             <!---------------------------Accordion Homepage Beginning------------------------------------------------->
 
             <!--Split Screen Homepage Code (NO ACCORDION)-->
-            <div class="row no-gutters"> <!--NOTE: "no-gutters is a bootstrap class"-->
-
-                <div class="col-md-6 no-gutters"> <!--Left Side of the Page-->
-                    <div class="leftside d-flex justify-content-center align-items-center"></div>
-                    Click Category 1
+            <div class="d-md-flex flex-row h-md-100 align-items-center justify-content-center">
+                <!--Leftside of Screen-->
+                <div class="col-md-6 p-0 bg-maroon h-md-100">
+                    <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+                        <div class="coffeearea pt-5 pb-5">
+                            <!--Content inside the Coffee Area-->
+                        </div>
+                        <!--Accordion Starts Here--------------->
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                        Coffee Options
+                                    </a>
+                                </div>
+                                <!--Coffee Options Will Go Here-->
+                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        [PLACEHOLDER FOR COFFEE CATEGORIES]
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Accordion Ends Here-->
+                    </div>
+                </div>
+                <!--Rightside of Screen-->
+                <div class="col-md-6 p-0 bg-olive h-md-100 teaarea">
+                    <div class="text-white d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+                        <!--Content Inside Tea Area-->
+                    </div>
+                    <!--2nd Accordion Begins Here-->
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="collapsTwo">
+                                    Tea Options
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
             
-                </div>
 
-                <div class="col-md-6 no-gutters"> <!--Right Side of the Page-->
-                    <div class="rightside d-flex justify-content-center align-items-center"></div>
-                    Click Category 2
 
-                </div>
-            </div>
 
-            <!--Accordion Without the HomePage-->
-            <div id="accordion">
-                <!---Accordion 1 Start---------------------------------------->
-                <div class="card">
-                    <div class="card-header">
-                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                            Category 1
-                        </a>
-                    </div>
-                    <div id="collapseOne" class="collapse " data-parent="#accordion">
-                        <div class="card-body">
-                            [THIS IS WHERE THE LEFT SIDE WILL GO]
-                        </div>
-                    </div>
-                </div>
-                <!---Accordion 1 End---------------------------------------->
+   
 
-                <!---Accordion 2 Start---------------------------------------->
-                <div class="card">
-                    <div class="card-header">
-                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                            Category 2
-                        </a>
-                    </div>
-                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                        <div class="card-body">
-                            [THIS IS WHERE THE RIGHT SIDE WILL GO]
-                        </div>
-                    </div>
-                </div>
-                <!---Accordion 2 End---------------------------------------->
-
-            </div>
+            
 
             
 

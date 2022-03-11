@@ -1,23 +1,21 @@
 /*
 In-Class Practice (03/10/22) - Bootstrap
 */
-.leftside, .rightside {
-    height: 50vh;
-    width: 100%
+body{
+    height: 100vh;
+    width: 100%;
 }
 
-/*For Larger Screens*/
-@media screen and (min-width:768px){
-    .leftside, .rightside{
-        height: 100vh;
-    }
+@media (min-width:768px){
+        .h-md-100{
+            height:100vh;
+        }
 }
 
-.leftside{
+.bg-maroon{
     background-color: maroon;
 }
 
-.rightside{
+.bg-olive{
     background-color: #33401c;
 }
-
