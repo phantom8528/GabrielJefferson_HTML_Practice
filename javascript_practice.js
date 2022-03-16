@@ -144,47 +144,45 @@ Finally, print out the reamining balance of the account.
 
 //--Solution 3 With Sytactic Sugar
 
-// class Bank{
-//     constructor(type, balance, limit, min){
-//         this.type = type; //<-- Type: String, Options: Checking, Savings
-//         this.balance = balance; // <-- Type: Number
-//         this.limit = limit; //<-- Type: Number
-//         this.min = min; // <-- Type: Number
-//     }
-//     deposit(addMoney){
-//         if (addMoney < this.min){
-//             console.log(`\nYour Deposit of $${addMoney}.00 is Below The Deposit Minimum\n`);
-//             // return "\nYou Are Below The Deposit Minimum\n";
-//         }else{
-//             this.balance = addMoney + this.balance;
-//             console.log(`\nYou've Added $${addMoney}.00 to Your ${this.type} account\n`);
-//         }
+class Bank{
+    constructor(type, balance, limit, min){
+        this.type = type; //<-- Type: String, Options: Checking, Savings
+        this.balance = balance; // <-- Type: Number
+        this.limit = limit; //<-- Type: Number
+        this.min = min; // <-- Type: Number
+    }
+    deposit(addMoney){
+        if (addMoney < this.min){
+            console.log(`\nYour Deposit of $${addMoney}.00 is Below The Deposit Minimum\n`);
+            // return "\nYou Are Below The Deposit Minimum\n";
+        }else{
+            this.balance = addMoney + this.balance;
+            console.log(`\nYou've Added $${addMoney}.00 to Your ${this.type} account\n`);
+        }
 
-//     }
-//     withdraw(takeMoney){
-//         if (takeMoney > this.limit){
-//             console.log("\nYou've exceeded your deposit limit\n");
-//         }else if (this.balance < 0){
-//             console.log("You Have Insufficient Funds");
-//         }else{
-//             this.balance = balance - takeMoney;
-//             console.log(`You Have $${this.balance}.00 in Your ${this.type}`)
+    }
+    withdraw(takeMoney){
+        if (takeMoney > this.limit){
+            console.log("\nYou've exceeded your deposit limit\n");
+        }else if (this.balance < 0){
+            console.log("You Have Insufficient Funds");
+        }else{
+            this.balance = balance - takeMoney;
+            console.log(`You Have $${this.balance}.00 in Your ${this.type}`)
 
 
-//         }
-//     }
-//     get accountStatus(){
-//         return `\nYou Have $${this.balance}.00 In Your ${this.type} Account\n`; 
-//     }
-// }
+        }
+    }
+    get accountStatus(){
+        return `\nYou Have $${this.balance}.00 In Your ${this.type} Account\n`; 
+    }
+}
 
-// let firstAccount = new Bank ("Checking", 100, 500, 10);
+let firstAccount = new Bank ("Checking", 100, 500, 10);
 
-// console.log(firstAccount.accountStatus);
-// firstAccount.deposit(4);
-// firstAccount.deposit(600);
-// console.log(firstAccount.accountStatus);
-// firstAccount.withdraw(650);
+console.log(firstAccount.accountStatus);
+firstAccount.deposit(4);
+
 
 /*
 ---------------------------------------------------------------
@@ -195,11 +193,11 @@ If the letter is vowel then print true else print false.
 ---------------------------------------------------------------
 */
 
-//--Solution That Can Take An Entire Word
+//--Solution That Can Take One
 
 // function isVowel(option){
 //     let vowels = ["a", "e", "i", "o", "u"];
-//     for (let i=0; i<vowels.length;i++){
+//     for (let i=0; i<vowels.length; i++){
 //         if (vowels[i] === option[i]){
 //             return true;
 //         }else{
@@ -209,6 +207,7 @@ If the letter is vowel then print true else print false.
 // }
 // console.log(isVowel("apple"));
 // console.log(isVowel("hymn"));
+// console.log(isVowel("gabriel"));
 
 
 // ----------------------------------------In-Classs Practice (03/15/22) - Javascript Introduction---------------------------//
