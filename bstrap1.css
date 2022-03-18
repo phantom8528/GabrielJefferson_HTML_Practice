@@ -1,0 +1,7 @@
+[class*="col"]{
+    padding:1rem;
+    background-color: lightblue;
+    border:2px solid white;
+    color:white;
+}
+
